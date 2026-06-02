@@ -4,7 +4,7 @@ while n=<10:
   t+=n
   n+=1
 print(t)
-#problem
+#problem2
 a=4
 b=9
 c=19
