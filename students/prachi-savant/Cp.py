@@ -6,13 +6,19 @@ def average_marks(mark1, mark2, mark3):
 # Example
 print(average_marks(80, 90, 85))
 #problem 2
-def get_result(average):
-    if average >= ...:
-        return "..."
-    elif average >= ...:
-        return "..."
+PASS_MARK = 35
+DISTINCTION_MARK = 75
+
+def classify_result(average):
+    if average < PASS_MARK:
+        return "FAIL"
+    elif average >= DISTINCTION_MARK:
+        return "DISTINCTION"
     else:
-        return "..."
+        return "PASS"
+print(classify_result(84.3))  # DISTINCTION
+print(classify_result(55.0))  # PASS
+print(classify_result(31.0))  # FAIL
         #problem 3
 def letter_grade(average):
     if average >= 90:
